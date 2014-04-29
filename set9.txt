@@ -1,0 +1,23 @@
+Sean Fitzgerald
+https://github.com/Fitzy97/gw45-DaCoderzz
+APCS2 pd08
+HW34
+2014-30-14
+
+Do You Know?
+
+Set 9
+
+1) CrabCritter doesn't override processActors because its getActors method gets the specified actors it wants to process, thus processActors can just use those.
+
+2) CrabCritter uses getActors to find the actors, by creating an array of ints for the direction in front, right-front, and left-front, parsing the locations at those ints, and if they contain an acotr they are added to an ArrayList.  It eats one of these actors by removing it from the grid, if it is not a rock or critter.
+
+3) getLocationsInDirections is used in CrabCritter to help find whatever is in front, front-right, and front-left of the crab.  It first gets the directions from the current critter location, then calls getLocationsInDirections on these ints to get the locations.
+
+4) A CrabCritter's getActors method will return actors with locations in (4, 5), (3, 5), and (2, 5).
+
+5) While critters can move in any direction, CrabCritters can only move sideways, but they both must gather all the locations that are possible to move to, select one, and move.
+
+6) A CrabCritter will turn instead of moving when the space to its left and the space to its right are both non-empty.
+
+7) CrabCritter objects don't eat each other because all critters inherit the restriction that they can only eat other actors that are not rocks or critters.
