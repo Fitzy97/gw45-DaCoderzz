@@ -1,5 +1,5 @@
 Sean Fitzgerald
-https://github.com/Fitzy97/gw45-DaCoderzz
+git@github.com:Fitzy97/gw45-DaCoderzz.git
 APCS2 pd08
 HW34
 2014-30-14
