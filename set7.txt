@@ -1,0 +1,19 @@
+JULIE KIM
+git@github.com:Fitzy97/gw45-DaCoderzz.git
+APCS pd 8
+HW34 -- Gridworld, Part 4
+2014-30-14
+
+Do You Know?
+Set 7
+1) act, getActors, processActors, getMoveLocations, selectMoveLocation, makeMove
+
+2) getActors, processActors, getMoveLocations, selectMoveLocation, makeMove
+
+3) Yes, because the subclasses may need to select actors from places other than from the Critter class.
+
+4) A critter can process actors actors by changing their colors.
+
+5) (1) getMoveLocation: returns a list of the empty locations adjacent to the critter (2) selectMoveLocation: randomly chooses and returns one of the adjacent empty locations returned by getMoveLocation (3) makeMove: uses the location returned by selectMoveLocation to move to the new location.
+
+6) Critter extends Actor, which provides a default constructor. 
