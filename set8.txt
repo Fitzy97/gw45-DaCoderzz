@@ -1,0 +1,20 @@
+James Kong
+git@github.com:Fitzy97/gw45-DaCoderzz.git
+APCS2 pd08
+HW 34 -- GridWorld, Part 4
+2014-04-29
+
+Do You Know?
+Set 8
+1. Act causes a ChameleonCritter to act differently from a Critter even though ChameleonCritter does not override act. The code was designed so that subclasses of Critter can modify specific methods that are invoked in the act method. For example, ChameleonCritter modifies processActors and makeMove which are both called in the act method thus causing it to function differently.
+
+2. The makeMove method of ChameleonCritter is similiar to that of the Critter class so it calls super.makeMove since it uses some functionality of the makeMove method from Critter. However, there is one change before moving, the direction is altered.
+
+3. To make the ChameleonCritter drop flowers in its old location when it moves, alter the makeMove method. It will resemble the code of the act method in Bug.
+
+4. ChameleonCritter does not override the getActors method because it does not need to. It uses the same actors as the ones returned by getActors method in Critter.
+
+5. The class that contains the getLocation method is Actor.
+
+6. A critter can access its own grid by calling the getGrid method.
+ 
