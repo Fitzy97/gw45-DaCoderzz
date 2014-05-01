@@ -1,0 +1,10 @@
+Set 10
+1. The isValid method is specified in the Grid interface, and is implemented by the BoundedGrid class and the UnboundedGrid class.
+
+2. getValidAdjacentLocations calls the isValid method. The other methods don't have to call isValid because they call getValidAdjacentLocations instead, and use the ArrayList getValidAdjacentLocations returns as they see fit. 
+
+3. getNeighbors calls Grid methods and getOccupiedAdjacentLocations. 
+
+4. The get method can return null, which tests for whether a location is empty or not.
+
+5. There would be less possible valid adjacent locations (just north, south, west, and east).
