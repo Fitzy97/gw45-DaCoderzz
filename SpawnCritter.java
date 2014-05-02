@@ -145,7 +145,7 @@ public class SpawnCritter extends Actor
 	    Location cur = getLocation();
             moveTo(loc);
 	    if ( isFlower ) {
-		Actor spawn = new Actor();
+		SpawnCritter spawn = new SpawnCritter();
 		spawn.putSelfInGrid( getGrid(), cur );
 		spawn.setDirection( getDirection() );
 		spawn.setColor( getColor() );
