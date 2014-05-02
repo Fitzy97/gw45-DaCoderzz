@@ -2,7 +2,6 @@
 //APCS2 pd 08
 //HW35
 //2014-05-02
- /* WORK DONE BY JAMES */
 import info.gridworld.grid.*;
 
 import java.util.*;
@@ -60,6 +59,7 @@ public class Unbounded<E> extends AbstractGrid<E>{
 	if (!isValid(loc)|| (loc.getRow() >= row || loc.getCol()>= row))
 	    return null;
 	E ret = anArray[loc.getRow()][loc.getCol()];
+	return ret;
     }
 
     public ArrayList<Location> getOccupiedLocations(){
@@ -71,5 +71,6 @@ public class Unbounded<E> extends AbstractGrid<E>{
 		    ret.add(aLocation);
 	    }
 	}
+    	return ret;	
     }
 }
