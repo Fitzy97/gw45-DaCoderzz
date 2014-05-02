@@ -1,0 +1,35 @@
+Do You Know?
+Set 11
+
+1. What ensures that a grid has at least one valid location?
+
+	Well, if one tries to access an invalid location, then a run-time exception will be thrown.
+
+2. How is the number of columns in the grid determined by the getNumCols method? What assumption about the grid makes this possible?
+
+	The production is that numRows() is greater than 0 so that means that theGrid[0] is not null. It a valid bounded grid. The code to determine the number of columns in the grid is: occupantArray[0].length which goes to row 0 of the grid and returns the number of columns.
+
+3. What are the requiremenets for a Location to be valid in a BoundedGrid?
+
+	A location must be within the bounds of the BoundedGrid. So basically, the number of rows and columns are each greater than 0. Also, the numbers of rows and columns are each less than that of the BoundedGrid respectively.
+
+4. What type is returned by the getOccupiedLocations method? What is the time complexity (Big-Oh) for this method?
+
+	An ArrayList of locations is the type returned by the getOccupiedLocations method. The run time of the array is the number of rows multiplied by the number of columns. This is because the function is performed on every space in the grid.
+
+5. What type is returned by the get method? What parameter is needed? What is the time complexity (Big-Oh) for this method?
+
+	E is the type returned by the get method. The parameter needed is the Location. The run time is just O(1) because the only thing it needs to do is look at one space of the grid.
+
+6. What conditions may cause an exception to be thrown by the put method? What is the time complexity(Big-Oh) for this method?
+
+	If the location is not a valid one or if the object is null, than an exception will be thrown. The time complexity for this method is just O(1), all it does is add an object to one particular space on the grid.
+
+7. What type is returned by the remove method? What happens when an attempt is made to remove an item from an empty location? What is the time complexity (Big-Oh) for this method?
+
+	E is the type returned by the remove method. If an attempt is made to remove an item from an empty location, then null is returned and that location is set to null. The time complexity is just O(1) because all the function does is to go the space, set its value to null, and return the value that it held before setting to null.
+
+8. Based on the answers to questiosn 4,5,6, and 7, would you consider this an efficient implementation? Justify your answer.
+
+	Based on my answers, to questions 4,5,6 and 7, I would consider this an efficient implementation. Put, Get, and Remove are all O(1). The only one that isn't is the method getOccupiedLocations which has O(number of rows * number of columns).		
+	
