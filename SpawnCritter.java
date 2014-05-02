@@ -1,19 +1,29 @@
-/* 
- * AP(r) Computer Science GridWorld Case Study:
- * Copyright(c) 2005-2006 Cay S. Horstmann (http://horstmann.com)
+/*****************************************************************
+ * SEAN FITZGERALD --- DACODERZZ
+ * APCS pd 08
+ * HW35 -- GridWorld, Part 4
+ * 2014-05-02
  *
- * This code is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation.
+ * class SpawnCritter
  *
- * This code is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
+ * BEACUASE:
+ * SpawnCritter was the coolest spec, by far, because it's the miracle of life right before your eyes
+ *
+ * SPECIFICATIONS:
+ * SpawnCritter Specs:
+ * This new creature should eat any flower that is in its path and produce a new instance of SpawnCritter. It should move like a critter. 
+ *
+ * TEST CASES:
+ * SpawnCritter Test Cases:
+ * When the SpawnCritter comes into contact with a flower.
+ * when the SpawnCritter comes into contact with another critter.
+ * When the SpanCritter comes into contact with edge of the board.
+ * When the SpawnCritter comes into contact with a rock.
  * 
- * @author Cay Horstmann
- */
-
+ * ERRATA:
+ * <any extra test cases, any developer decisions, or
+ * other judgment calls your team made to get the class working...>
+ *****************************************************************/
 package info.gridworld.actor;
 
 import info.gridworld.grid.Location;
