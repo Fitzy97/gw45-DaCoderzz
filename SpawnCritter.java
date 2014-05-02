@@ -147,7 +147,7 @@ public class SpawnCritter extends Actor
 	    if ( isFlower ) {
 		SpawnCritter spawn = new SpawnCritter();
 		spawn.putSelfInGrid( getGrid(), cur );
-		spawn.setDirection( getDirection() );
+		spawn.setDirection( Location.NORTH );
 		spawn.setColor( getColor() );
 	    }
 	}
