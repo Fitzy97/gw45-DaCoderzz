@@ -7,7 +7,7 @@ Set 11
 
 2. How is the number of columns in the grid determined by the getNumCols method? What assumption about the grid makes this possible?
 
-	The production is that numRows() is greater than 0 so that means that theGrid[0] is not null. It a valid bounded grid. The code to determine the number of columns in the grid is: occupantArray[0].length which goes to row 0 of the grid and returns the number of columns.
+	The assumption is that numRows() is greater than 0 so that means that theGrid[0] is not null. It's a valid bounded grid. The code to determine the number of columns in the grid is: occupantArray[0].length which goes to row 0 of the grid and returns the number of columns.
 
 3. What are the requiremenets for a Location to be valid in a BoundedGrid?
 
